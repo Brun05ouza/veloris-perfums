@@ -1,0 +1,39 @@
+---
+const year = new Intl.DateTimeFormat('pt-BR', {
+  year: 'numeric',
+  timeZone: 'America/Sao_Paulo',
+}).format(new Date());
+---
+
+<footer class="site-footer">
+  <div class="footer-panel">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="wordmark footer-wordmark" href="#inicio" aria-label="Véloris Parfums, início">
+          <span>VÉLORIS</span>
+          <span>PARFUMS</span>
+        </a>
+        <p>Presença que permanece.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Explore a Véloris">
+        <h2>Explore</h2>
+        <a href="#inicio">Início</a>
+        <a href="#fragrancia">Oceano Noturno</a>
+        <a href="#colecao">A coleção</a>
+      </nav>
+
+      <nav class="footer-nav" aria-label="O universo Véloris">
+        <h2>A casa</h2>
+        <a href="#proxima-secao">A arte de sentir</a>
+        <a href="#colecao-banner">Nosso universo</a>
+        <a href="#novidades">Novidades</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {year} Véloris Parfums</p>
+      <a class="footer-back" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+    </div>
+  </div>
+</footer>
